@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #fff7f9;
+color: #333;
+}
+
+/* HEADER */
+
+header {
+background: #ff5c8a;
+color: white;
+text-align: center;
+padding: 30px 15px;
+}
+
+header h1 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+header p {
+font-size: 17px;
+}
+
+/* NAVIGATION */
+
+nav {
+background: #333;
+padding: 16px;
+text-align: center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 20px;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #ff6f91;
+}
+
+/* HERO */
+
+.hero {
+text-align: center;
+padding: 80px 20px;
+background: #ffe1ea;
+}
+
+.hero h2 {
+font-size: 40px;
+margin-bottom: 15px;
+}
+
+.hero p {
+font-size: 20px;
+margin-bottom: 25px;
+}
+
+/* BUTTON */
+
+button {
+background: #ff4f79;
+color: white;
+border: none;
+padding: 12px 22px;
+border-radius: 25px;
+cursor: pointer;
+font-size: 15px;
+font-weight: bold;
+transition: 0.2s;
+}
+
+button:hover {
+background: #d93660;
+transform: scale(1.03);
+}
+
+/* SECTIONS */
+
+section {
+padding: 55px 7%;
+text-align: center;
+}
+
+section h2 {
+font-size: 30px;
+margin-bottom: 35px;
+}
+
+/* CAKE CONTAINER */
+
+.cake-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+max-width: 1100px;
+margin: auto;
+align-items: stretch;
+}
+
+/* CAKE CARD */
+
+.cake {
+background: white;
+padding: 25px 20px;
+border-radius: 18px;
+box-shadow: 0 5px 20px #ddd;
+
+```
+display: flex;
+flex-direction: column;
+
+min-height: 300px;
+```
+
+}
+
+/* CAKE TITLE */
+
+.cake h3 {
+font-size: 20px;
+margin-bottom: 15px;
+}
+
+/* CAKE DESCRIPTION */
+
+.cake p {
+font-size: 15px;
+line-height: 1.5;
+margin-bottom: auto;
+}
+
+/* PRICE */
+
+.cake h4 {
+font-size: 23px;
+color: #e83e68;
+margin: 20px 0;
+}
+
+/* ADD TO CART */
+
+.cake button {
+width: 100%;
+padding: 13px 10px;
+margin-top: auto;
+}
+
+/* CART */
+
+#cart {
+background: #fff0f4;
+}
+
+#cartItems {
+line-height: 2;
+margin-bottom: 15px;
+}
+
+/* ABOUT */
+
+#about {
+background: white;
+}
+
+#about p {
+max-width: 700px;
+margin: auto;
+line-height: 1.7;
+}
+
+/* CONTACT */
+
+#contact {
+background: #fff7f9;
+}
+
+#contact p {
+margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+background: #333;
+color: white;
+text-align: center;
+padding: 22px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+```
+.cake-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+```
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+```
+header h1 {
+    font-size: 27px;
+}
+
+nav a {
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.cake-container {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+}
+
+section {
+    padding: 40px 20px;
+}
+```
+
+}
